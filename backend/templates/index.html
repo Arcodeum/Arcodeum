@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcodeum - Prove Your Process</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Arcodeum</h1>
+        <div id="user-info"></div>
+    </header>
+    <main>
+        <div id="login-view">
+            <h2>Prove Your Skills. Showcase Your Process.</h2>
+            <p>Connect your GitHub account to start building a verifiable project portfolio.</p>
+            <button id="login-button">Login with GitHub</button>
+        </div>
+
+        <div id="dashboard-view" style="display: none;">
+            <h3>My Projects</h3>
+            <div id="project-list"></div>
+            <hr>
+            <h4>Create a New Project</h4>
+            <div id="create-project-form">
+                <input type="text" id="project-name" placeholder="Project Name">
+                <input type="text" id="repo-url" placeholder="Full GitHub Repo URL (e.g., https://github.com/user/repo)">
+                <button id="create-project-button">Create Project</button>
+            </div>
+        </div>
+
+        <div id="webhook-info-view" style="display: none;">
+             <h4>Action Required: Connect Your Repo</h4>
+             <p>To finish setup, add a Webhook to your GitHub repository settings.</p>
+             <ol>
+                <li>Go to your repo on GitHub: <a id="repo-link" href="#" target="_blank"></a></li>
+                <li>Go to <strong>Settings > Webhooks > Add webhook</strong>.</li>
+                <li>Paste the values below:</li>
+             </ol>
+             <strong>Payload URL:</strong>
+             <input type="text" id="webhook-url" readonly>
+             <strong>Content type:</strong>
+             <p><code>application/json</code></p>
+             <strong>Secret:</strong>
+             <p><em>Leave blank for this MVP. We will add a secret later for security.</em></p>
+             <p>That's it! Your Arcodeum project is now linked.</p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* frontend/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#project-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.kanban-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.kanban-column {
+    background-color: #eff3f6;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.kanban-column h3 {
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 2px solid #dde4eb;
+    padding-bottom: 10px;
+}
+
+.task-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+}
+
+.task-card .task-id {
+    font-weight: bold;
+    color: #667;
+    font-size: 12px;
+}
+
+.task-card .task-title {
+    margin-top: 5px;
+    font-size: 15px;
+}
